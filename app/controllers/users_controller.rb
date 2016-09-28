@@ -5,7 +5,7 @@ class UsersController < ApplicationController
     end
     
     def new
-        render :new_user_path
+       # default: render 'new' template
     end
     
     def create
