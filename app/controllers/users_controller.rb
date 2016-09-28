@@ -5,7 +5,7 @@ class UsersController < ApplicationController
     end
     
     def new
-        # default: render 'new' template
+        render "app/views/users/new"
     end
     
     def create
