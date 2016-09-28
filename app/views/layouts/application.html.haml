@@ -9,10 +9,8 @@
   %body
     %h1.title Rotten Potatoes!
     #main
-      <%= button_to 'Sign up/Login', new_user_path %>
-        # => <form method="get" action="/users/new" class="button_to">
-        #   <input value="Sign up/Login" type="submit" />
-        #   </form>
+      = button_to 'Sign up/Login', new_user_path
+      
       - if flash[:notice]
         #notice.message= flash[:notice]
       - elsif flash[:warning]
