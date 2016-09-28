@@ -5,7 +5,7 @@ class UsersController < ApplicationController
     end
     
     def new
-        render "app/views/users/new"
+        render :new_user_path
     end
     
     def create
