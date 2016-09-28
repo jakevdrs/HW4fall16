@@ -9,7 +9,7 @@ class UsersController < ApplicationController
     end
     
     def create
-        @user = User.create_user!(params[:user])
+        @user = User.create_user!(user_params)
         
         if !!(@user)
             flash[:notice] = "Welcome #{@user.user_id}. Your account has been created."
