@@ -15,7 +15,7 @@ class UsersController < ApplicationController
             redirect_to movies_path
         else
            flash[:warning] = "Sorry, this user-id is taken. Try again."
-           redirect_to users_path
+           redirect_to new_user_path
         end
     end
 end
